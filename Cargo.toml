@@ -1,0 +1,12 @@
+[package]
+name = "net2parquet"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+etherparse = "0.13"
+pcap = {version = "1"}
+parquet = "39.0"
+parquet_derive = "39.0"
+clap = {version = "4.0", features = ["derive"]}
+subprocess = "0.2.9"
