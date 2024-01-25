@@ -73,7 +73,7 @@ fn process_pkt(
         nsec, 
     });
 
-    //Always expect an Ethernet header, so it's absense is an error
+    //Always expect an Ethernet header, so it's absence is an error
     match hdrs.link.ok_or("No Ethernet header")? {
         etherparse::LinkSlice::Ethernet2(eth) => {
             net_hdr_vec.eth.push(EthHeaders {
